@@ -4,7 +4,7 @@ import { BiStar } from "react-icons/bi"
 export default function Header() {
     return (
         <div className="home-color">
-            <div className="h-screen">
+            <div className="h-64">
 
                 <h1 className="text-white text-center font-bold text-xl pt-7">Content de vous revoir, SwartZ</h1>
                 <h2 className="vip-text text-center text-lg pt-2">Votre Progression VIP</h2>
