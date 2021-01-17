@@ -1,17 +1,28 @@
 import React from 'react';
-import content from '../content';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import { BiStar } from "react-icons/bi"
 
-export default function Navigation() {
+export default function Header() {
     return (
-        <div className="navbar-color">
-            <div className="flex items-center justify-between w-10/12 mx-auto py-5 text-white font-dosis">
-                    <LazyLoadImage src={content.header.logo}/>
+        <div className="home-color">
+            <div className="h-screen">
 
-            <div onClick={event => window.open("https://discord.gg/7FhT8J85Z3")} className="w-4 mr-0">
-                <LazyLoadImage src={content.header.profile}/>
-            </div>
+                <h1 className="text-white text-center font-bold text-xl pt-7">Content de vous revoir, SwartZ</h1>
+                <h2 className="vip-text text-center text-lg pt-2">Votre Progression VIP</h2>
+
+                <div className="h-4 overflow-hidden mt-5">
+                    <div className="w-10/12 h-full rounded-3xl bg-gray-600 z-0 mx-auto relative"></div>
+                    <div className="w-10/12 h-full rounded-3xl progress-bar z-10 mx-auto relative"></div>
+                </div>
+                <div className="flex flex-row items-center justify-between mx-16">
+                <h3 className="mt-3 text-white text-sm font-bold">Aucun</h3>
+                    <div className="flex flex-row items-center stars-color">
+                           <div className="w-full h-full mt-auto font-bold"><BiStar/></div>
+                        <h4 className="mt-3 text-white text-sm font-bold">Bronze</h4>
+                    </div>
+                </div>
+                <div className="vip-text text-center ml-auto mr-auto text-xs pt-5 justify-center overflow-hidden w-9/12">
+                <span>Suivez votre progression jusqu'au sommet de notre programme VIP pour gagner des avantages exclusifs.</span>
+                </div>
             </div>
         </div>
     );
